@@ -20,10 +20,17 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div id="profile">
-            <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
-            <b id="logout"><a href="logout.php">Log Out</a></b>
-        </div>
+        <nav class="navbar navbar-inverse" >
+            <div class='container-fluid'>
+                <div class='navbar-header'>
+                    <b>Welcome: <i><?php echo $login_session; ?></i> </b>
+                </div>
+                <ul class='nav navbar-nav navbar-right'>
+                    <li><a href="logout.php">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+
         <div class='container'>
             <form class='form-control-group' method='POST' action="insert.php">
                 <div class='form-group'> 
