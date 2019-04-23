@@ -2,6 +2,7 @@
     include('config.php');
     session_start(); // Starting Session
     $error=''; // Variable To Store Error Message
+    $db = new mysqli(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
     if (isset($_POST['submit'])) {
         if (empty($_POST['username']) || empty($_POST['password'])) {
             $error = "Username or Password is invalid";
