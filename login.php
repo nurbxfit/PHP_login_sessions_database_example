@@ -27,6 +27,7 @@
                     header('location:profile.php');
                 }else{
                     $error = "Invalid Username or Password";
+                    echo $error;
                 }
             }
         }
